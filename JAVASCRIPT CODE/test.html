@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <script type="text/javascript">
+    document.querySelector('.no').addEventListener('focusChange', function (e) {
+      console.log(e.offsetX, e.offsetY);
+      document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetX},154)`;
+      alert('You triggered mouse move event')
+    })
+
+  </script>
+</head>
+
+<body>
+  <form>
+    <label id="no">input name <input type="text"></label>
+  </form>
+</body>
+
+</html>
